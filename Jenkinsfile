@@ -33,7 +33,7 @@ pipeline {
     stage('Deploy Production') {
       environment {
         ENVIRONMENT = 'Production'
-        APP_NAME = 'demo-b'
+        APP_NAME = 'demo-b1'
       }
       steps {
             bat 'mvn -U -V -e -B -DskipTests deploy -DmuleDeploy'
